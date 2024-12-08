@@ -1,0 +1,2 @@
+#Simple Bank Application 🏦
+A lightweight and efficient banking application built with Python and PostgreSQL, showcasing the use of Object-Oriented Programming (OOP) principles and the psycopg2 library for database interaction.
