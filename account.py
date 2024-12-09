@@ -10,7 +10,7 @@ class Account:
         assert isinstance(balance, int), "Balance must be number"
         client = ClientOut.get_client_by_id(client_id)
         assert client, f"Client with id {client_id} not found "
-        self.client_id = client_id
+        self.client_id = client.id
         self.__balance = balance
         self.id = id
         conn = psycopg2.connect(

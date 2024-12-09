@@ -5,10 +5,11 @@ from clientCreate import ClientCreate
 
 class ClientOut(ClientCreate):
     def __init__(self, first_name: str, last_name: str, id: int):
-        super().__init__(first_name, last_name, id)
+        super().__init__(first_name, last_name)
+        self.id = id
 
     def __repr__(self):
-        return super().__repr__()
+        return f"{super().__repr__()}, id = {self.id}"
 
     @classmethod
     def get_client_by_id(cls, id):

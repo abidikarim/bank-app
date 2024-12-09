@@ -3,14 +3,13 @@ import psycopg2.extras
 
 
 class ClientCreate:
-    def __init__(self, first_name: str, last_name: str, id: int = None):
+    def __init__(self, first_name: str, last_name: str):
         assert first_name, "first_name is mandatory"
         assert last_name, "last_name is mandatory"
         assert isinstance(first_name, str), "first_name should be a string"
         assert isinstance(last_name, str), "last_name should be a string"
         self.first_name = first_name
         self.last_name = last_name
-        self.id = id
 
     @staticmethod
     def connect():
@@ -20,7 +19,7 @@ class ClientCreate:
         return conn
 
     def __repr__(self):
-        return f"Hello , i'm {self.first_name} {self.last_name} , id = {self.id}"
+        return f"Hello , i'm {self.first_name} {self.last_name} "
 
     def add_client_in_db(self):
         conn = self.connect()
