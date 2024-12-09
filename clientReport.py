@@ -32,7 +32,3 @@ class ClientReport(ClientOut):
                 except Exception as e:
                     print("error is : ", e)
         conn.close()
-
-
-# cl = ClientReport.get_client_report(4)
-# print(cl)

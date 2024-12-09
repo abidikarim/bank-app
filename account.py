@@ -39,9 +39,3 @@ class Account:
     @balance.setter
     def balance(self, new_balance):
         self.__balance = new_balance
-
-
-# account = Account(4, 2500)
-# # account.balance = 4500
-# # print(account.balance)
-# print(account)

@@ -24,7 +24,3 @@ class ClientOut(ClientCreate):
                 except Exception as e:
                     print("error is : ", e)
         conn.close()
-
-
-# cl = ClientOut.get_client_by_id(4)
-# print(cl)
